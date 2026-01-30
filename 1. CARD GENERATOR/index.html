@@ -2,33 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Generator</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div id="main">
-        <h1>GENERATE A CARD</h1>
-        <h3>FILL YOUR DETAILS CAREFULLY</h3>
-        <form action="">
-            <input type="text" placeholder="profile picture">
-            <input type="text" placeholder="Full Name">
-            <input type="number" placeholder="Age">
-            <input type="email" placeholder="Email Address">
-            <input type="text" placeholder="your specifications">
-            <input class="submit" type="submit">
-        </form>
-    </div>
-    <div id="card">
-        <div class="profile">
-            <img class ="details" src="" alt="">
-        </div>
-        <h1 class="details"></h1>
-        <h3 class="details"></h3>
-        <p class="details"></p>
+    <div class="container">
+        <div id="main">
+            <h1>Generate Your Card</h1>
+            <h3>Fill your details carefully</h3>
 
+            <form>
+                <input type="text" placeholder="Profile picture URL">
+                <input type="text" placeholder="Full Name">
+                <input type="number" placeholder="Age">
+                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Your specifications">
+                <input type="submit" value="Generate Card">
+            </form>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
