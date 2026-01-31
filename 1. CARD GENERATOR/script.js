@@ -36,7 +36,6 @@ form.addEventListener("submit", function (dets) {
     p.setAttribute("class", "details");
     p.textContent = inputs[4].value;
 
-
     profile.appendChild(img);
     card.appendChild(profile);
     card.appendChild(h2);
@@ -46,7 +45,8 @@ form.addEventListener("submit", function (dets) {
     container.appendChild(card);
 
     inputs.forEach(function (input) {
-        input.value = ""
+        if (input.type !== "submit") {
+            input.value = "";
+        }
     });
-
 });
