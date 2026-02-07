@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Unicode';
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1{
+    font-size: 3vw;
+}
+
+.container p{
+    font-size: 1vw;
+}
+.container button{
+    border-radius: 11px;
+    border: none;
+    padding: 0.5vw 1vw;
+    margin-top: 1vw;
+}
+
+.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light .container button {
+    background-color: rgb(211, 209, 209);
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: #ffffff;
+}
+
+.dark .container button {
+    background-color: rgb(211, 209, 209);
+    color: black;
+}
