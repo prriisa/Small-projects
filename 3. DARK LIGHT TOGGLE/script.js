@@ -18,7 +18,7 @@ let savedTheme = localStorage.getItem("theme");
 
 if (savedTheme) {
     document.body.classList.add(savedTheme);
-    if(savedTheme = "dark"){
+    if(savedTheme === "dark"){
         document.body.classList.remove("light");
         span.innerHTML = "DARK";
 
