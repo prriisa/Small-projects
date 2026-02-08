@@ -16,6 +16,9 @@ A modern dark–light mode switcher that automatically detects the user’s OS t
 
 The selected theme is saved in localStorage, and user preference is given priority over system settings.
 
+### 4. Real-Time User Search Filter
+A dynamic frontend project that displays user cards and filters them in real time based on the starting letters of the user’s name.  
+It uses JavaScript string methods and DOM manipulation to show matching users instantly and displays a **“No User Found”** message when no match exists.
 
 ### Tech Stack
 - HTML
