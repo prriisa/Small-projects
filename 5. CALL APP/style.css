@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Unicode';
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #e2e2e2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================= CONTAINER 1 ================= */
+
+#container1 {
+    width: 33vw;
+    height: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#c1-btns {
+    height: 90%;
+    width: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin-top: -1vw;
+}
+
+.icon {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    box-shadow: 0.5vw 0.4vw 0.7vw rgba(0, 0, 0, 0.2);
+}
+
+.icon i {
+    font-size: 1.5vw;
+    padding-top: 0.3vw;
+    color: black;
+}
+
+#c1-main {
+    position: relative;
+    width: 21vw;
+    height: 18vw;
+}
+
+#c1-card {
+    height: 18vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 85%;
+    border: 0.1px solid #E2E2E2;
+    border-radius: 11px;
+    border-top: 0;
+    position: absolute;
+    box-shadow: 0.2vw 1vw 1vw rgba(77, 77, 77, 0.2);
+}
+
+.c1-data {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    height: 15vw;
+    width: 21vw;
+    display: initial;
+}
+
+.detail {
+    width: 21vw;
+    height: 7.1vw;
+}
+
+.dp {
+    width: 3vw;
+    height: 3vw;
+    margin: 1vw 1vw;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.name {
+    font-size: 1.3vw;
+    margin: -0.3vw 0 1vw 1vw;
+    color: black;
+}
+
+.info {
+    width: 21vw;
+    height: 4.5vw;
+}
+
+.hometown,
+.booking {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5vw 1vw;
+    font-size: 0.92vw;
+}
+
+.info p {
+    color: rgb(63, 63, 63);
+}
+
+.contact {
+    width: 21vw;
+    height: 3.4vw;
+    display: flex;
+}
+
+.call {
+    background-color: black;
+    color: white;
+    width: 5vw;
+    height: 2vw;
+    border: none;
+    border-radius: 15px;
+    margin-left: 1.6vw;
+    letter-spacing: -1px;
+    display: flex;
+}
+
+.call h6 {
+    font-size: 1vw;
+    font-weight: lighter;
+    margin: 3px 4px;
+}
+
+.call i {
+    font-size: 1.1vw;
+    padding-top: 5px;
+    margin-left: 0.8vw;
+}
+
+.message {
+    width: 5.5vw;
+    background-color: rgb(199, 199, 199);
+    width: 5vw;
+    height: 2vw;
+    border: none;
+    border-radius: 15px;
+    margin-left: 1.6vw;
+    letter-spacing: -1px;
+    display: flex;
+}
+
+.message p {
+    font-size: 1vw;
+    margin: 0.2vw 0.8vw;
+}
+
+#c1-color {
+    height: 90%;
+    width: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin-top: -2vw;
+}
+
+.color {
+    width: 2vw;
+    height: 2vw;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0vw 0vw 1.2vw rgba(48, 48, 48, 0.2);
+}
+
+/* #container1 {
+    display: none;
+} */
+
+/* ================= CONTAINER 2 ================= */
+
+#container2 {
+    width: 95%;
+    max-width: 500px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.c2-heading {
+    color: black;
+    font-size: 1.6rem;
+    margin: 25px 0 15px 0;
+}
+
+.c2-data {
+    width: 100%;
+}
+
+.c2-data h6 {
+    font-size: 0.9rem;
+    color: rgb(41, 41, 41);
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.input {
+    width: 85%;
+    border-radius: 6px;
+    border: 1px solid rgb(233, 233, 233);
+    margin: 8px 0 8px 20px;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.input::placeholder {
+    color: rgb(165, 165, 165);
+}
+
+.options {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0 0 20px;
+}
+
+.options label {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid rgb(180, 180, 180);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: rgb(117, 117, 117);
+}
+
+.c2-button {
+    width: 85%;
+    border-radius: 20px;
+    border: none;
+    margin: 20px 0 0 2vw;
+    padding: 10px;
+    font-size: 0.9rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.doneMsg{
+    display: none;
+    text-align: center;
+    margin-top: 6vw;
+    z-index: 4;
+}

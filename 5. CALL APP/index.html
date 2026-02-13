@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div id="container1">
+        <div id="c1-btns">
+            <button class="icon"><i class="bx bx-plus"></i></button>
+            <button class="icon"><i class="bx bx-up-arrow-alt"></i></button>
+            <button class="icon"><i class="bx bx-down-arrow-alt"></i></button>
+        </div>
+        <div id="c1-main">
+            <div id="c1-card">
+                <div class="card" style="z-index: 2;background-color: #ffffff; width: 22vw;"></div>
+                <div class="card" style="z-index: 1; background-color: #EAEAEA; top:0.6vw ; width: 21.5vw;"></div>
+                <div class="card" style="z-index: 0; background-color: #E0E0E0; top:1.2vw ; width: 21vw;"></div>
+            </div>
+            <div class="c1-data" selected = "Personal">
+                <div class="detail">
+                    <img class="dp" src="https://i.pinimg.com/736x/30/97/88/30978854212252ffd222b84099ac677f.jpg" alt="">
+                    <h5 class="name">Fatima Uma </h5>
+                </div>
+                <div class="info">
+                    <div class="hometown">
+                        <p class="homeTown">Home Town</p>
+                        <p>Singapore</p>
+                    </div>
+                    <div class="booking">
+                        <p class = "purpose">Purpose</p>
+                        <p>Call Me.</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <button class="call"><i class="bx bx-phone"></i>
+                        <h6>Call</h6>
+                    </button>
+                    <button class="message">
+                        <p>Message</p>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div id="c1-color">
+            <button class="color" style="background-color: black; opacity: 80%;"></button>
+            <button class="color" style="background-color: purple; opacity: 80%;"></button>
+            <button class="color" style="background-color: orange; opacity: 80%;"></button>
+            <button class="color" style="background-color: aqua; opacity: 80%;"></button>
+        </div>
+    </div>
+    <div id="container2">
+        <h4 class="c2-heading">New Call</h4>
+        <form class="c2-data">
+            <h6>Image URl</h6>
+            <input required class="input" type="text" placeholder="https://www.google.com">
+            <h6>Full Name</h6>
+            <input required class="input" type="text" placeholder="Enter Full Name">
+            <h6>Home Town</h6>
+            <input required class="input" type="text" placeholder="Enter Home Town">
+            <h6>Purpose</h6>
+            <input required class="input" type="text" placeholder="e.g. Quick Appointment note">
+            <h6>Category</h6>
+            <div class="options">
+                <label style="color: rgb(177, 81, 97);"><input type="checkbox" name="category" value="Business"> Business</label>
+                <label style="color: rgb(255, 174, 0);"><input type="checkbox" name="category" value="Education"> Education</label>
+                <label style="color: purple;"><input type="checkbox" name="category" value="Medical"> Medical</label>
+                <label><input type="checkbox" name="category" value="Personal"> Personal</label>
+            </div>
+            <input type="submit" value="Create Note" class="c2-button">
+            <button class="c2-button">Close</button>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
