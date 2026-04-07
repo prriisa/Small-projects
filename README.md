@@ -23,6 +23,9 @@ It uses JavaScript string methods and DOM manipulation to show matching users in
 ### 5. Call Note Manager
 A responsive call note management app that allows users to create, store, and navigate call notes dynamically.
 
+### 6. Toaster Notification (Auto Dismiss)  
+A small frontend project that displays a toast notification on button click. The notification appears at the bottom-right corner and automatically disappears after a few seconds.  
+It demonstrates DOM manipulation, event handling, and timed UI updates using JavaScript.
 
 ### Tech Stack
 - HTML
