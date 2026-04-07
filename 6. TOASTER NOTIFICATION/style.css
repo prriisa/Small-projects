@@ -14,7 +14,7 @@ body {
 }
 
 .toasterNotification {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     color: rgb(180, 180, 180);

@@ -1,15 +1,22 @@
-function toasterCall(config){
-    return function(){
-        
+let button = document.querySelector("button");
+
+function toasterCall() {
+    return function (){
+
+        let toasterNotification = document.querySelector(".toasterNotification");
+
+        // show toaster
+        toasterNotification.style.display = 'flex';
+
+        // hide after 3 sec
+        setTimeout(() => {
+            toasterNotification.style.display = "none";
+        }, 2000);
     }
 }
-let fcn = toasterCall({
-    positionX:"left",
-    positionY : "top",
-    theme : "dark",
-    duration : 3 ,
-})
 
-fcn("this is a Toaster Notification");
-let toasterNotification = document.getElementsByClassName("toasterNotification");
-let toasterFont = document.querySelector("h5");
+let fcn = toasterCall();
+
+button.addEventListener("click", function(){
+    fcn();
+});
