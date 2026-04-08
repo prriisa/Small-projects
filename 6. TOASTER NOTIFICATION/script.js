@@ -1,21 +1,19 @@
+let div = document.querySelector(".toasterContainer");
 let button = document.querySelector("button");
 
 function toasterCall() {
-    return function (){
-
-        let toasterNotification = document.querySelector(".toasterNotification");
-
-        // show toaster
-        toasterNotification.style.display = 'flex';
-
-        // hide after 3 sec
+    return function () {
+        let messageDiv = document.createElement("div");
+        messageDiv.textContent = "This is a Toaster Notification";
+        messageDiv.classList.add("toasterMessage");
+        div.appendChild(messageDiv);
         setTimeout(() => {
-            toasterNotification.style.display = "none";
+            div.removeChild(messageDiv);
         }, 2000);
+
     }
 }
-
-let fcn = toasterCall();
+fcn = toasterCall();
 
 button.addEventListener("click", function(){
     fcn();
